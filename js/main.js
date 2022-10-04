@@ -20,3 +20,13 @@ function repeatStr (n, s) {
   // This code does not execute properly. Try to figure out why.
 
     const multiply = (a, b) => a * b;
+
+    // Find the smallest integer in the array
+    // Given an array of integers your solution should find the smallest integer. 
+
+    class SmallestIntegerFinder {
+  
+      findSmallestInt = args => {
+        return Math.min(...args)
+      }
+    }
