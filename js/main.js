@@ -91,3 +91,11 @@ function repeatStr (n, s) {
       const greet = () => {
         return "hello world!";
       }
+
+
+      //Convert a String to a Number!
+      // We need a function that can transform a string into a number. What ways of achieving this do you know?
+      const stringToNumber = function(str){
+        // put your code here
+        return parseInt(str);
+      }
