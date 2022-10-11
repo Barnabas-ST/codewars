@@ -79,7 +79,7 @@ function repeatStr (n, s) {
       function countSheeps(arrayOfSheep) {
         // TODO May the force be with you
         
-        const count = arrayOfSheep.filter( element => element === true);
+        const count = arrayOfSheep.filter( element => element === true); //filter method tests each element and generates a new array with the elements that passed
         
         return count.length;
       }
@@ -97,5 +97,18 @@ function repeatStr (n, s) {
       // We need a function that can transform a string into a number. What ways of achieving this do you know?
       const stringToNumber = function(str){
         // put your code here
-        return parseInt(str);
+        return parseInt(str); //parseInt() method parses a string argument and returns an integer of the specified radix or base.
+      }
+
+
+      //Keep Hydrated!
+      /* Nathan loves cycling.
+      Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+      You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+       */
+      function litres(time) {
+  
+        let hoursToLitresConversion = Math.floor (time * 0.5); //Math.floor() function always rounds down and returns the largest integer less than or equal to a given number.
+        
+        return hoursToLitresConversion;
       }
