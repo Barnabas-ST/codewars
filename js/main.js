@@ -112,3 +112,16 @@ function repeatStr (n, s) {
         
         return hoursToLitresConversion;
       }
+
+
+      // Century From Year
+      /*The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+        Given a year, return the century it is in. Examples Year 2000 = 20 century, Year 1705 = 18th century, Year 1601 = 17th century*/
+
+      function century(year) {
+        // Finish this :)
+        
+       let centuryOfYear = Math.ceil(year/100);
+        
+        return centuryOfYear;
+      }
