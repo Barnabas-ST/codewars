@@ -187,5 +187,17 @@ function repeatStr (n, s) {
       }
 
 
+      // Convert number to reversed array of digits
+      // Given a random non-negative number, you have to return the digits of this number within an array in reverse order. Example (Input => Output): 35231 => [1,3,2,5,3]
 
+      function digitize(n) {
+        //code here
+        
+        let nArr = Array.from(String (n)) //the arguments passed in n need to convereted to a string for Array.from to work
+        
+        const arrOfNum = nArr.map(str => Number(str)); // for the array of number output required map is used to get the new array of numbers
+        
+        return arrOfNum.reverse()
+        
+      }
 
