@@ -167,3 +167,25 @@ function repeatStr (n, s) {
         }
       }
 
+
+      // Convert a Boolean to a String
+      // Implement a function which convert the given boolean value into its string representation.
+
+      function booleanToString(b){
+        //your code here
+        
+        switch (b){
+            case true :
+            return "true";
+            
+            case false:
+            return "false";
+            
+            default:
+            return "Not a boolean"
+        }
+      }
+
+
+
+
