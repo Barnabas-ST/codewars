@@ -208,7 +208,21 @@ function repeatStr (n, s) {
       function doubleInteger(i) {
         // i will be an integer. Double it and return it.
         
-        return i*i;
+        return i*2;
       }
+
+
+      //Beginner - Lost Without a Map
+      //Given an array of integers, return a new array with each value doubled.
+
+      function maps(x){
+  
+        newArray = x.map(element => element*2);
+        
+        return newArray;
+      
+      }
+
+
 
 
