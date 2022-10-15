@@ -193,11 +193,22 @@ function repeatStr (n, s) {
       function digitize(n) {
         //code here
         
-        let nArr = Array.from(String (n)) //the arguments passed in n need to convereted to a string for Array.from to work
+        let nArr = Array.from(String (n)) //the arguments passed in n need to be convereted to a string for Array.from to work
         
         const arrOfNum = nArr.map(str => Number(str)); // for the array of number output required map is used to get the new array of numbers
         
         return arrOfNum.reverse()
         
       }
+
+
+      //You Can't Code Under Pressure #1
+      // Code as fast as you can! You need to double the integer and return it.
+
+      function doubleInteger(i) {
+        // i will be an integer. Double it and return it.
+        
+        return i*i;
+      }
+
 
