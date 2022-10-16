@@ -223,6 +223,21 @@ function repeatStr (n, s) {
       
       }
 
+      //Abbreviate a Two Word Name
+      // Write a function to convert a name into initials. This kata strictly takes two words with one space in between them. The output should be two capital letters with a dot separating them.
+      // It should look like this: Sam Harris => S.H or patrick feeney => P.F
 
+      function abbrevName(name){
+
+      // code away
+      
+      const nameArr = name.split(' ')   // split the words into two strings in an array 
+      const firstChar = nameArr[0].charAt(0)  // take the first character of each string
+      const secChar = nameArr[1].charAt(0)
+    
+      return `${firstChar.toUpperCase()}.${secChar.toUpperCase()}`  // concatenate the first characters with a period
+      
+    
+      }
 
 
