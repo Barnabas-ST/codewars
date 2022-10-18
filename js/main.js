@@ -261,4 +261,31 @@ function repeatStr (n, s) {
       }
 
 
+      // Beginner Series #2 Clock
+      /* Clock shows h hours, m minutes and s seconds after midnight. Your task is to write a function which returns the time since midnight in milliseconds.
+              Input constraints: 0 <= h <= 23; 0 <= m <= 59; 0 <= s <= 59
+
+      Example: h = 0; m = 1; s = 1
+
+      result = 61000
+      */
+
+      function past(h, m, s){
+        //#Happy Coding! ^_^
+        
+        if (h<=23 && h>=0 && m<=59 && m>=0 && s<=59 && s>=0){
+          
+          let hToMilliSec = h * 3600000; //convert inputs to millisecond
+          let mToMilliSec = m * 60000;
+          let sToMilliSec = s * 1000;
+          
+          return hToMilliSec + mToMilliSec + sToMilliSec //add times for total
+            
+        } else {
+          return 'One of your inputted times is incorrect'
+        }
+        
+      }
+
+
 
