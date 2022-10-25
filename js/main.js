@@ -217,7 +217,7 @@ function repeatStr (n, s) {
 
       function maps(x){
   
-        newArray = x.map(element => element*2);
+        const newArray = x.map(element => element*2);
         
         return newArray;
       
@@ -367,6 +367,22 @@ function repeatStr (n, s) {
       return numbers.reduce((a,c) => a+c,0) 
         
     };
+
+    //  Invert values
+    //  Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+    //  EXAMPLE: invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]  OR invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5] OR invert([]) == []
+
+    function invert(array) {
+  
+      if(array == null || array.length < 1){
+              
+          return []
+        }
+      
+      const invertedArray = array.map(element => element * -1)
+      
+      return invertedArray
+    }
       
 
       
