@@ -397,7 +397,7 @@ function repeatStr (n, s) {
     }
 
     // Calculate average
-    
+
     //  Write a function which calculates the average of the numbers in a given list. Note: Empty arrays should return 0.
 
     function findAverage(array) {
@@ -416,6 +416,30 @@ function repeatStr (n, s) {
           }
       
     }
+
+
+    // Fake Binary
+    // Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+    function fakeBin(x){
+  
+      let numArray = x.split('')
+      
+      return numArray.map(element => {
+        if (element <5){
+          
+          return element = 0;
+          
+        } else if (element >=5){
+          return element = 1;
+        }
+      }).join("")
+      
+    }
+
+    /*function fakeBin(x) {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+  }*/
       
 
       
