@@ -395,6 +395,27 @@ function repeatStr (n, s) {
       return name.startsWith('R') || name.startsWith("r") ? name + " plays banjo" : name + " does not play banjo"
     
     }
+
+    // Calculate average
+    
+    //  Write a function which calculates the average of the numbers in a given list. Note: Empty arrays should return 0.
+
+    function findAverage(array) {
+      // your code here
+      
+      if (array == null || array.length < 1){
+        
+          return 0
+        
+          } else {
+            
+          let sum = array.reduce((a,c)=> a+c,0)
+      
+          return sum/array.length ;
+            
+          }
+      
+    }
       
 
       
