@@ -440,6 +440,21 @@ function repeatStr (n, s) {
     /*function fakeBin(x) {
     return x.split('').map(n => n < 5 ? 0 : 1).join('');
   }*/
+
+
+  //You only need one - Beginner
+  /*You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+    Array can contain numbers or strings. X can be either.
+    Return true if the array contains the value, false if not.*/
+
+  function check(a, x) {
+    // your code here
+    
+    const findVal = a.find(element => element === x)
+    
+    return findVal === x ? true : false
+  
+  }
       
 
       
