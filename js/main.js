@@ -504,3 +504,18 @@ function hero(bullets, dragons){
       
     }
   }
+
+
+  //  DNA to RNA Conversion
+  /*Create a function which translates a given DNA string into RNA. For example: "GCAT"  =>  "GCAU"*/
+
+  function DNAtoRNA(dna) {
+    // create a function which returns an RNA sequence from the given DNA sequence
+    
+    const dnaArr = dna.split('')
+    
+    const rnaArr = dnaArr.map(element => element ==="T" ? "U" : element)
+    
+    return rnaArr.join('')
+    
+  }
