@@ -850,3 +850,17 @@ function sumMix(x){
   
   return xNum.reduce((a,c) => a+c,0)
 }
+
+
+//  Remove exclamation marks
+//  Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeExclamationMarks(s) {
+
+  const sArray = s.split('!');
+  
+  const sNewStr = sArray.join('')
+  
+  return sNewStr
+  
+}
