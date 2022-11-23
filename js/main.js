@@ -913,3 +913,29 @@ function arrayPlusArray(arr1, arr2) {
   return arr1.reduce((a,c)=> a+c,0) + arr2.reduce((a,c)=> a+c,0); 
   
 }
+
+
+//  Sum without highest and lowest number
+/*Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+Mind the input validation.
+{ 6, 2, 1, 8, 10 } => 16
+{ 1, 1, 11, 2, 3 } => 6*/  
+
+function sumArray(array) {
+
+  if (array === null || array === undefined || array.length < 2){ //(!array || array.length < 2) better option
+    
+    return 0
+  
+  } else {
+    const orderArray = array.sort((a, b) => a-b)
+  
+    const removeMinNum = array.shift()
+    
+    const removeMaxNum = array.pop()
+  
+    return array.reduce((a,c)=> a+c,0)
+  }
+  
+  }
