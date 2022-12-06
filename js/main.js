@@ -1063,7 +1063,7 @@ function sumArray(array) {
           
           function firstNonConsecutive (arr) {
   
-            let nonConsec = arr.find((x,y) => x !== y + arr[0]) // searchong for a consecutive pattern
+            let nonConsec = arr.find((x,y) => x !== y + arr[0]) // searching for a consecutive pattern
             
             return Number.isInteger (nonConsec) ? nonConsec : null // verifying the output of searching for the pattern
             
@@ -1164,4 +1164,17 @@ Note: base is a non-negative number, factor is a positive number.*/
 function checkForFactor (base, factor) {
   // code here
   return base%factor ==0 ? true : false;
+}
+
+
+//  Removing Elements
+/*Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+Example:
+["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+None of the arrays will be empty, so you don't have to worry about that!*/
+
+function removeEveryOther(arr){
+  //your code here
+  
+  return arr.filter((_,index) => index % 2 == 0) // we dont need the elements so we use _
 }
