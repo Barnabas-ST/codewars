@@ -1190,3 +1190,12 @@ function hoopCount (n) {
  
  return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it"
 }
+
+
+//  Function 2 - squaring an argument
+//  Now you have to write a function that takes an argument and returns the square of it.
+
+// Write the "square"-function here
+function square(n){
+  return Math.pow(n,2)
+}
