@@ -1218,3 +1218,30 @@ String.prototype.isUpperCase = function Check (str) {
   
   return this == this.toUpperCase()
 }
+
+
+//  Expressions Matter
+/*Task
+Given three integers a ,b ,c, return the largest number obtained after inserting the following operators and brackets: +, *, ()
+In other words , try every combination of a,b,c with [*+()] , and return the Maximum Obtained (Read the notes for more detail about it)
+Example
+With the numbers are 1, 2 and 3 , here are some ways of placing signs and brackets:
+
+1 * (2 + 3) = 5
+1 * 2 * 3 = 6
+1 + 2 * 3 = 7
+(1 + 2) * 3 = 9
+So the maximum value that you can obtain is 9.*/  
+
+function expressionMatter(a, b, c) {
+  
+  let allMultiplication = a * b * c
+  let allAdd = a + b + c
+  let bracketAddSecondThird = a * (b + c)
+  let addFirstSecond = a + b * c
+  let addSecondThird = a * b + c
+  let bracketAddFirstSecond = (a + b) * c
+
+  
+  return Math.max(allAdd, allMultiplication, bracketAddSecondThird, addFirstSecond, addSecondThird, bracketAddFirstSecond)// highest achievable result
+}
