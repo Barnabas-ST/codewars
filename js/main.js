@@ -1385,7 +1385,7 @@ function correct(string)
 }
 
 
-//
+//  Student's Final Grade
 /*Create a function finalGrade, which calculates the final grade of a student depending on two parameters: a grade for the exam and a number of completed projects.
 This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);
 This function should return a number (final grade). There are four types of final grades:
@@ -1430,3 +1430,29 @@ function finalGrade (exam, projects) {
     
   }
 }
+
+
+//  I love you, a little , a lot, passionately ... not at all
+/*Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+"I love you"
+"a little"
+"a lot"
+"passionately"
+"madly"
+"not at all"
+If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.*/  
+
+function howMuchILoveYou(nbPetals) {
+    
+  let petalsArr = ["not at all","I love you","a little","a lot","passionately","madly"]
+   
+  let index = nbPetals % 6
+  
+  if (index === -1){
+    index = petalsArr.length - 1
+  }
+   
+  return petalsArr[index]
+ }
