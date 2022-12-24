@@ -1586,3 +1586,14 @@ function sumStr(a,b) {
   return (+a + +b).toString()
   
   }
+
+
+//  Is it a palindrome?
+//  Write a function that checks if a given string (case insensitive) is a palindrome.
+
+function isPalindrome(x) {
+  // your code here
+  
+return x.toLowerCase() == x.toLowerCase().split('').reverse().join('') ? true : false
+
+}
