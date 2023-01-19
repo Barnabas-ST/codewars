@@ -2193,7 +2193,7 @@ Input:  1,3,5,6,7,8 Output: 1,2,3,4,5,6,7,8*/
 
 function pipeFix(numbers){
 
-return Array.from({length: numbers.slice(-1) - numbers[0] + 1}, (_,index) => index + numbers[0])  
+return Array.from({length: numbers.slice(-1) - numbers[0] + 1}, (_,index) => index + numbers[0])  // length sets the arry length
 }
 
 //OR 
@@ -2233,4 +2233,14 @@ Good luck :)*/
 function unusualFive(char) {
   let arr = ['hi','hi', 'hi', 'hi','hi']
   return arr.length;
+}
+
+
+//  Remove duplicates from list
+/*Define a function that removes duplicates from an array of numbers and returns it as a result.
+The order of the sequence has to stay the same.*/
+
+function distinct(a) {
+  
+  return Array.from(new Set(a));
 }
