@@ -2251,7 +2251,7 @@ function distinct(a) {
 
 function hexToDec(hexString){
   //your code here
-  return parseInt(hexString,16);;
+  return parseInt(hexString,16);
 }
 
 
@@ -2293,5 +2293,15 @@ function take(arr, n) {
 function binToDec(bin){
   // ...
   
-  return parseInt(bin, 2)
+  return parseInt(bin, 2);
+}
+
+
+//  Super Duper Easy
+/*Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".*/
+
+function problem(x){
+  //your code here
+  
+  return typeof x !== "string" ? x*50 + 6 : 'Error';
 }
