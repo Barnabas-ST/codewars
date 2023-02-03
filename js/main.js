@@ -2460,3 +2460,20 @@ const getSize = (width, height, depth) => {
   return [2*(height*width + width*depth + height*depth), width*height*depth]
   
 }
+
+
+//  Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
+/*Description:
+Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
+Examples
+replace("Hi!") === "H!!"
+replace("!Hi! Hi!") === "!H!! H!!"
+replace("aeiou") === "!!!!!"
+replace("ABCDE") === "!BCD!"
+*/
+
+function replace(s){
+  //coding and coding....
+  
+  return s.replace(/[aeiouAEIOU]/g,'!');
+}
