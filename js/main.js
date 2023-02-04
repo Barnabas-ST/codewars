@@ -2498,3 +2498,22 @@ function noBoringZeros(n) {
     '+' next to the 0 is a Quantifier (check mdn) to find multiple matches. For example, /a+/ matches the "a" in "candy" and all the "a"'s in "caaaaaaandy*/ 
   //$ is an Assertion(mdn) Matches the end of input
 }
+
+
+//  Simple validation of a username with regex
+/*Write a simple regex to validate a username. Allowed characters are:
+lowercase letters,
+numbers,
+underscore
+Length should be between 4 and 16 characters (both included).
+
+*/
+function validateUsr(username) {
+  
+  return /^[a-z\d_]{4,16}$/.test(username)
+
+  //[a-z\d_], withing the [], a-z matches all characters in the range, \d matches any digit and _ mataches underscore in input
+  //{4-16} matches for length of input
+  //$ is an Assertion(mdn) Matches the end of input
+  //^ is an Assertion(mdn) Matches the beginning of input
+}
