@@ -2768,3 +2768,15 @@ Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)*
     
     return Math.pow(radius, 2)
   }
+
+
+  //  Find the position!
+  /*When provided with a letter, return its position in the alphabet.
+  Input :: "a"
+  Ouput :: "Position of alphabet: 1"*/
+
+  function position(letter){
+    //Write your own Code!
+      
+      return `Position of alphabet: ${letter.charCodeAt() - 96}`
+    }
