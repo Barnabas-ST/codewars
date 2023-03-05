@@ -2758,8 +2758,8 @@ function sumOfDifferences(arr) {
   }
 
 
-  //  Area of a Square
-  /*Complete the function that calculates the area of the red square, when the length of the circular arc A is given as the input. Return the result rounded to two decimals.
+//  Area of a Square
+/*Complete the function that calculates the area of the red square, when the length of the circular arc A is given as the input. Return the result rounded to two decimals.
 Graph
 Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)*/
 
@@ -2770,8 +2770,8 @@ Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)*
   }
 
 
-  //  Find the position!
-  /*When provided with a letter, return its position in the alphabet.
+//  Find the position!
+/*When provided with a letter, return its position in the alphabet.
   Input :: "a"
   Ouput :: "Position of alphabet: 1"*/
 
@@ -2782,8 +2782,8 @@ Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)*
     }
 
 
-    //  Remove First and Last Character Part Two
-    /*You are given a string containing a sequence of character sequences separated by commas.
+//  Remove First and Last Character Part Two
+/*You are given a string containing a sequence of character sequences separated by commas.
 Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.
 If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value (represented as a generic value NULL in the examples below).
 Examples
@@ -2804,8 +2804,26 @@ Examples
       }
 
 
-      //  Kata Example Twist
-      /*This is an easy twist to the example kata (provided by Codewars when learning how to create your own kata).
+//  Kata Example Twist
+/*This is an easy twist to the example kata (provided by Codewars when learning how to create your own kata).
 Add the value "codewars" to the array websites/Websites 1,000 times.*/
 
       var websites = new Array(1000).fill('codewars')
+
+
+//  Multiple of index
+/*Return a new array consisting of elements which are multiple of their own index in input array (length > 1).
+
+Some cases:
+[22, -6, 32, 82, 9, 25] =>  [-6, 32, 25]
+
+[68, -1, 1, -7, 10, 10] => [-1, 10]
+
+[-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
+*/
+
+function multipleOfIndex(array) {
+  // good luck
+  
+  return array.filter((x,y) => x % y == 0)
+}
