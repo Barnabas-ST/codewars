@@ -3370,3 +3370,10 @@ Return value as boolean values, true for the string to contains "English", false
         return sentence.toLowerCase().includes("english")
     
     }
+
+
+//  Mr. Freeze
+/*There is an object/class already created called MrFreeze. Mark this object as frozen so that no other changes can be made to it.*/
+
+Object.freeze(MrFreeze) 
+// mark the MrFreeze object instance as frozen
